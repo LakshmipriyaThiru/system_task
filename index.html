@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Form</title>
+</head>
+<body>
+    <form action="submit.php" method="post">
+        <label for="name">Employee Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" id="employee_id" name="employee_id" required><br>
+
+        <label for="department">Department/Team:</label>
+        <select id="department" name="department" required>
+            <option value="HR">HR</option>
+            <option value="Finance">Finance</option>
+            <option value="IT">IT</option>
+        </select><br>
+
+        <label>Sex:</label>
+        <input type="radio" id="male" name="sex" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="Female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="sex" value="Other" required>
+        <label for="other">Other</label><br>
+
+        <label>Marital Status:</label>
+        <input type="radio" id="single" name="marital_status" value="Single" required>
+        <label for="single">Single</label>
+        <input type="radio" id="married" name="marital_status" value="Married" required>
+        <label for="married">Married</label>
+        <input type="radio" id="divorced" name="marital_status" value="Divorced" required>
+        <label for="divorced">Divorced</label><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br>
+
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" name="salary" required pattern="\d+(\.\d{1,2})?"><br>
+
+        <button type="submit">Submit</button>
+        <button type="button" onclick="window.location.href='view.php';">View</button>
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+</html>
